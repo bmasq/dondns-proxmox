@@ -37,12 +37,16 @@ while True:
             ctdict = json.load(f)
     except FileNotFoundError:
         print(f"ERROR: The file {filename} could not be found.")
+        exit(1)
     except json.decoder.JSONDecodeError:
         print(f"ERROR: The file {filename} is not a valid JSON file.")
+        exit(1)
     except PermissionError:
         print(f"ERROR: You do not have permission to access the file {filename}.")
+        exit(1)
     except Exception as e:
         print(f"ERROR: An unexpected error occurred while opening and reading the file {filename}:", e)
+        exit(1)
 
     # creates Containers from "pct config" output
     containers = list()
