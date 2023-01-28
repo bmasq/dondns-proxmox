@@ -1,5 +1,16 @@
 #!/usr/bin/python3
 
+"""
+NOTICE: The "dondns.sh" script and "dondns.conf" file are products of
+Soluciones Corporativas IP, S.L. and are available under the GNU Lesser
+General Public License v3.0. These files, originally named "dondomcli.sh"
+and "dondomcli.conf," along with their documentation and source code, can
+be found on the official repository at https://github.com/dondominio/
+dondns-bash.git. The author can be contacted at info@dondominio.com or
+through the website dondominio.com. Copyright © 2023 Soluciones
+Corporativas IP, S.L.
+"""
+
 from container import Container
 from time import sleep
 import json

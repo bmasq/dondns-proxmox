@@ -1,3 +1,7 @@
+**All files in this project, including "[dondns.sh](/dondnsample/dondns.sh)" and "[dondns.conf](dondnsample/dondns.sh)", fall under the GNU Lesser General Public License ("[LGPL](LICENSE)"**
+
+---
+
 Description here...
 
 ---
