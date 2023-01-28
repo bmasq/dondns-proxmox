@@ -1,5 +1,3 @@
-from IPaddress import IPaddress
-
 # Receives the output of pct config
 def configToDict(string):
     # split the input string by newline characters to get a list of lines
@@ -22,23 +20,3 @@ def configToDict(string):
             value = valueDict
         data[key.strip()] = value
     return data
-
-class Container():
-    
-    def __init__(self, id, hostname, rawConfig) -> None:
-        config = configToDict(rawConfig)
-        self._id = id
-        self._hostname = hostname
-        self._ip = IPaddress(config["net0"]["ip"])
-
-    @property
-    def id(self):
-        return self._id
-    
-    @property
-    def hostname(self):
-        return self._hostname
-
-    @property
-    def ip(self):
-        return self._ip.address

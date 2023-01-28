@@ -1,0 +1,11 @@
+[Unit]
+Description=Update CTs' DNS records
+
+[Service]
+user=root
+WorkingDirectory=/root/dondnsUpdate
+ExecStart=/root/dondnsUpdate/updateRecords.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
