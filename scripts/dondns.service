@@ -2,7 +2,7 @@
 Description=Update CTs' DNS records
 
 [Service]
-user=root
+User=root
 WorkingDirectory=/root/dondnsUpdate
 ExecStart=/usr/bin/python3 -u /root/dondnsUpdate/updateRecords.py 3600
 Restart=no
