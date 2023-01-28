@@ -24,8 +24,11 @@ try:
         raise ValueError
 except IndexError:
     sys.stderr.write("ERROR: no delay time specified")
+    exit(1)
 except ValueError:
     sys.stderr.write("ERROR: bad format for delay time")
+    exit(1)
+
 
 # run as daemon
 while True:
