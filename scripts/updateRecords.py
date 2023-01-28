@@ -33,6 +33,7 @@ except ValueError:
 # run as daemon
 while True:
     filename = "IDs-hostnames.json"
+    ctdict = dict()
     try:
         with open(filename, "r") as f:
             ctdict = json.load(f)
