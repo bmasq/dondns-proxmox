@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 """
 NOTICE: The "dondns.sh" script and "dondns.conf" file are products of
 Soluciones Corporativas IP, S.L. and are available under the GNU Lesser

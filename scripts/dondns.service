@@ -4,8 +4,8 @@ Description=Update CTs' DNS records
 [Service]
 user=root
 WorkingDirectory=/root/dondnsUpdate
-ExecStart=/root/dondnsUpdate/updateRecords.py
-Restart=on-failure
+ExecStart=/usr/bin/python3 -u /root/dondnsUpdate/updateRecords.pyc 3600
+Restart=no
 
 [Install]
 WantedBy=multi-user.target
